@@ -1,0 +1,219 @@
+body {
+    background: linear-gradient(to bottom, rgba(255, 99, 71, 0.2), rgba(178, 34, 34, 0.1)); /* Fondo rojo bandera claro */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.barra-blanca {
+    background: linear-gradient(to right, rgb(254, 251, 251), rgb(255, 251, 252), rgb(250, 246, 246));
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    color: white;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    max-height: 150px;
+}
+
+
+
+
+.barra-verde {
+    background-color: #007A33; /* Verde bandera */
+    padding: 20px 0;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-size: 10%;
+    padding: 10px 15px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.navegacion a:hover {
+    background-color: rgba(7, 47, 67, 0.701); /* Efecto hover */
+    border-radius: 5px;
+}
+
+
+.carrusel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 30%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.carousel-img {
+    width: 1100px; /* Ajusta el ancho deseado */
+    height: 600px; /* Ajusta la altura deseada */
+    object-fit: cover; /* Cubre el espacio sin distorsionar */
+}
+
+
+.imagenes {
+    display: flex;
+    transition: transform 0.1s ease;
+}
+
+.imagenes img {
+    width: 100%;
+    max-width: 100px; /* Tamaño de las imágenes */
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+button.prev, button.next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(58, 232, 19);
+    border: none;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#caption {
+    text-align: center;
+    color: #ccc;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.video-container {
+    display: flex;
+    gap: 20px; /* Espacio entre los videos */
+    justify-content: center;
+}
+
+.video-container iframe {
+    width: 45%; /* Ajusta el ancho según necesites */
+    height: 300px; /* Ajusta la altura según necesites */
+}
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed; /* Queda fijo en la pantalla */
+    z-index: 1; /* Sobreponer otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    overflow: auto; /* Permitir scroll si es necesario */
+    background-color: rgb(0,0,0); /* Color de fondo negro */
+    background-color: rgba(0,0,0,0.4); /* Fondo con opacidad */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% desde la parte superior y centrado */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+    max-width: 600px; /* Máximo ancho del modal */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.close {
+    color: #aaa;
+    float: right; /* Alinear a la derecha */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Color al pasar el mouse */
+    text-decoration: none;
+    cursor: pointer;
+}.footer {
+    background-color: #007A33; /* Verde bandera */
+    padding: 20px;
+    color: white;
+}
+
+.footer-title {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.footer-section {
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
